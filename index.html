@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <title></title>
+    <title>Mushroom E-Shop</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
 <body>
   <main id="main">
@@ -26,29 +27,39 @@
       <div class="item">
         <img src="https://food.fnr.sndimg.com/content/dam/images/food/unsized/2014/8/23/0/fnd_Morel-Mushrooms-Thinkstock_s4x3.jpg"/>
         <span class="caption">Morel Mushrooms</span>
-        <span class="price">5$</span>
+        <span id="MorelPrice" value="5" class="price">5</span>
+        <button id="MorelMushrooms">Buy</button>
       </div>
       <div class="item">
         <img src="https://freshgenfoods.com/wp-content/uploads/2022/04/Portobeloo-Mushroom-.jpeg"/>
         <span class="caption">Portabello Mushrooms</span>
-        <span class="price">5$</span>
+        <span id="PortabelloPrice" value="5" class="price">5</span>
+        <button id="PortabelloMushrooms">Buy</button>
       </div>
       <div class="item">
         <img src="https://m.media-amazon.com/images/I/51JP1XQScAL.jpg"/>
         <span class="caption">Cremini Mushrooms</span>
-        <span class="price">5$</span>
+        <span id="CreminiPrice" value="5" class="price">5</span>
+        <button id="CreminiMushrooms">Buy</button>
       </div>
       <div class="item">
         <img src="https://veggies.my/cdn/shop/products/fresh-button-mushroom-500x500.jpg?v=1605449457"/>
         <span class="caption">Button Mushrooms</span>
-        <span class="price">5$</span>
+        <span id="ButtonPrice" value="5" class="price">5</span>
+        <button id="ButtonMushrooms">Buy</button>
       </div>
       <div class="item">
         <img src="https://contenthandler-raleys.fieldera.com/prod/298802/1/0/0/10702596-Main.jpg"/>
         <span class="caption">Lion's Mane</span>
-        <span class="price">5$</span>
+        <span id="LionsManePrice" value="5" class="price">5</span>
+        <button id="LionsMane">Buy</button>
       </div>
     </fieldset>
+  </div>
+  <div class="total">
+    <h2>Total</h2>
+    <p id="counter" class="total" value="">0</p>
+    <button id="CheckOut">Check Out</button>
   </div>
   </main>
 </body>
