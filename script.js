@@ -5,7 +5,12 @@ let counterValue = document.getElementById('counter');
 
 prices.forEach(el => {
     el.addEventListener('click', function() {
-        counterValue.value = counterValue.value + el.innerText;
+        // Convert the current screen value and the clicked number to numbers
+        let currentCounter = Number(counterValue.value);
+        let clickedPrice = Number(el.innerText);
+
+        // Perform addition and update the calculator screen
+        counterValue.value = (currentCounter + clickedPrice).toString();
     });
 });
 
